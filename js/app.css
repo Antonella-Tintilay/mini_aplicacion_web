@@ -1,6 +1,16 @@
+:root {
+    --bg: #ffff;
+    --colortext: #ffff;
+    --card: #b6bbf6;
+    --bgli: #f2f2f2;
+    --lihover:#bdb8b8;
+    --success: #2ecc71;
+    --error: #e74c3c;
+    --warning: #f1c40f;
 body {
     font-family: Arial;
     text-align: center;
+    background: var(--bg);
 }
 
 form {
@@ -13,7 +23,7 @@ input {
 
 button {
     background: #2a2626;
-    color: #ffffff;
+    color: var(--colortext);
     padding: 8px;
     margin-left: 5px;
     cursor: pointer;
@@ -25,7 +35,7 @@ ul {
 }
 
 li {
-    background: #f2f2f2;
+    background: var(--bgli);
     margin: 5px auto;
     padding: 10px;
     width: 250px;
@@ -35,7 +45,7 @@ li {
 }
 
 li:hover {
-    background: #bdb8b8;
+    background: var(--lihover);
 }
 
 .completada span{
@@ -52,7 +62,7 @@ li button{
 }
 .card {
     width: 150px;
-    background: #f2f2f2;
+    background: var(--card);
     padding: 10px;
     border-radius: 10px;
     text-align: center;
