@@ -1,12 +1,14 @@
 :root {
-    --bg: #ffff;
-    --colortext: #ffff;
+    --bg: #ffffff;
+    --buttonbg: #2a2626;
+    --colortext: #ffffff;
     --card: #b6bbf6;
     --bgli: #f2f2f2;
     --lihover:#bdb8b8;
     --success: #2ecc71;
     --error: #e74c3c;
     --warning: #f1c40f;
+}
 body {
     font-family: Arial;
     text-align: center;
@@ -19,14 +21,24 @@ form {
 
 input {
     padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+input:focus {
+    outline: 2px solid var(--buttonbg);
 }
 
 button {
-    background: #2a2626;
+    background: var(--buttonbg);
     color: var(--colortext);
     padding: 8px;
     margin-left: 5px;
     cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+button:hover{
+    background: #444;
 }
 
 ul {
@@ -48,9 +60,10 @@ li:hover {
     background: var(--lihover);
 }
 
-.completada span{
+.completada{
     text-decoration: line-through;
     opacity: 0.6;
+    color: var(--success);
 }
 li button{
     background: rgb(255, 255, 255);
@@ -66,6 +79,11 @@ li button{
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.1);
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
 }
 
 .card img {
@@ -77,4 +95,26 @@ li button{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+}
+.error {
+    background: #fdecea;
+    color: var(--error);
+    border: 1px solid var(--error);
+    padding: 10px;
+    border-radius: 8px;
+}
+.vacio {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.loading {
+    color: #2a2626;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
 }

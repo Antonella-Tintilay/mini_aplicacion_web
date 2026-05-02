@@ -35,6 +35,7 @@ const obtenerPersonajes = async (url) => {
 
     } catch (error) {
         estado.textContent = "Error de red o API";
+        estado.classList.add("error");
         contenedor.innerHTML = "";
     }
 };
@@ -46,6 +47,7 @@ input.addEventListener("input", (e) => {
     if (valor.length < 3) {
         estado.textContent = "Escribí al menos 3 caracteres";
         contenedor.innerHTML = "";
+        estado.classList.remove("error")
         return;
     }
 
