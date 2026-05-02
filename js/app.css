@@ -13,6 +13,50 @@ body {
     font-family: Arial;
     text-align: center;
     background: var(--bg);
+    margin: 0;
+}
+.filtros {
+    margin: 15px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dddd;
+}
+.filtros label {
+    font-weight: bold;
+    color: #2a2626;
+}
+
+.filtros input,
+.filtros select {
+    padding: 6px;
+    margin: 5px;
+}
+.producto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+.producto-card {
+    background: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.producto-card h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.precio {
+    font-weight: bold;
+}
+.stock {
+    font-size: 12px;
+    color: gray;
 }
 
 form {

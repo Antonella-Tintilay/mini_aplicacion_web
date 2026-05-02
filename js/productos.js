@@ -1,14 +1,14 @@
 const productos = [
-    { id: 1, nombre: "Laptop Pro", precio: 800, categoria: "electronica", enStock: true },
-    { id: 2, nombre: "Smartphone X", precio: 500, categoria: "electronica", enStock: true },
-    { id: 3, nombre: "Audífonos Bluetooth", precio: 80, categoria: "electronica", enStock: false },
-    { id: 4, nombre: "Camiseta Deportiva", precio: 35, categoria: "ropa", enStock: true },
-    { id: 5, nombre: "Jeans Premium", precio: 65, categoria: "ropa", enStock: true },
-    { id: 6, nombre: "Lámpara LED", precio: 45, categoria: "hogar", enStock: true },
-    { id: 7, nombre: "Cafetera Eléctrica", precio: 90, categoria: "hogar", enStock: false },
-    { id: 8, nombre: "Balón de Fútbol", precio: 30, categoria: "deportes", enStock: true },
-    { id: 9, nombre: "Raqueta de Tenis", precio: 120, categoria: "deportes", enStock: true },
-    { id: 10, nombre: "Tablet 10 pulgadas", precio: 350, categoria: "electronica", enStock: true }
+    { id: 1, nombre: "Laptop Pro", precio: 899999, categoria: "electronica", enStock: true },
+    { id: 2, nombre: "Smartphone X", precio: 450000, categoria: "electronica", enStock: true },
+    { id: 3, nombre: "Audífonos Bluetooth", precio: 25900, categoria: "electronica", enStock: false },
+    { id: 4, nombre: "Camiseta Deportiva", precio: 12900, categoria: "ropa", enStock: true },
+    { id: 5, nombre: "Jeans Premium", precio: 28900, categoria: "ropa", enStock: true },
+    { id: 6, nombre: "Lámpara LED", precio: 15900, categoria: "hogar", enStock: true },
+    { id: 7, nombre: "Cafetera Eléctrica", precio: 34900, categoria: "hogar", enStock: false },
+    { id: 8, nombre: "Balón de Fútbol", precio: 9900, categoria: "deportes", enStock: true },
+    { id: 9, nombre: "Raqueta de Tenis", precio: 45900, categoria: "deportes", enStock: true },
+    { id: 10, nombre: "Tablet 10 pulgadas", precio: 199000, categoria: "electronica", enStock: true }
 ];
 const mostrarProductos=(lista)=>{
     const contenedor=document.getElementById("productos");
