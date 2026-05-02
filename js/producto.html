@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de filtrado de Productos</title>
+</head>
+<body>
+    <header>
+        <h1> Tienda de Productos</h1>
+    </header>
+    <main>
+        <div class="filtros">
+            <label for="categoria">Categoria: </label>
+            <select id="categoria">
+                <option value="todas">Todas las categorias</option>
+                <option value="electronica">Electrónica</option>
+                <option value="ropa">Ropa</option>
+                <option value="hogar">Hogar</option>
+                <option value="deportes">Deportes</option>
+            </select>
+            <div class="filtro">
+                <label for="precio">Precio máximo: $<span id="precioValor">1000</span></label>
+                <input type="range" id="precio" min="0" max="1000" value="1000" step="10">
+            </div>
+            <div class="filtro">
+                <label>
+                    <input type="checkbox" id="enStock">
+                    Solo en stock
+                </label>
+            </div>
+            <div class="filtro">
+                <label for="busqueda">Buscar:</label>
+                <input type="text" id="busqueda" placeholder="Nombre del producto...">
+            </div>
+        </div>
+        <section id="productos" class="producto-grid">
+        </section>
+    </main>
+    <script src="productos.js"></script>
+</body>
+</html>
